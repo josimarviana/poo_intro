@@ -36,6 +36,7 @@ public class Pessoa {
 
     public void setCarro(Carro carro) {
         this.carro = carro;
+        this.carro.setDono(this);
         System.out.print("Pessoa "+nome+" ganhou um carro "+carro.getModelo()+"!\n");
     }
 

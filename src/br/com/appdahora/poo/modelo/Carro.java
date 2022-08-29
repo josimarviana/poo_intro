@@ -4,7 +4,13 @@ public class Carro {
     private boolean ligado;
     private int velocidade;
     private String modelo;
-
+    private Pessoa dono;
+    public Pessoa getDono(){
+        return dono;
+    }
+    public void setDono(Pessoa dono){
+        this.dono = dono;
+    }
     public Carro(String modelo){
         this.modelo = modelo;
         System.out.print("Carro "+modelo+" criado com sucesso!\n");
